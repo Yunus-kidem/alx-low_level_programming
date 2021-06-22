@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - Prints alphabet in lowercase,
- * and then in uppercase.
- *
- *Return: Always 0.
- */
+* main - Lanzador
+*
+* Return: Always 0
+*
+*/
 
 int main(void)
 {
@@ -19,6 +19,5 @@ int main(void)
 	_putchar('o');
 	_putchar('n');
 	_putchar('\n');
-
 	return (0);
 }
