@@ -1,11 +1,14 @@
-include "holberton.h"
+#include "holberton.h"
+
 /**
- * add - adds two numbers together.
- * @i: The first number to be added.
- * @j: The second number to be added.
- * Return: the sum of two numbers.
+ * add - Suma dos enteros por función.
+ * @i: Primera varable entera a sumar.
+ * @l: Segunda variable a sumar.
+ * Return: retorno con sumatoria
  */
-int add(int i, int j)
+int add(int i, int l)
 {
-	return (i + j);
+	int n;
+	 n = i + l;
+	return (n);
 }
