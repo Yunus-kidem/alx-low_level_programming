@@ -1,26 +1,17 @@
 #include "holberton.h"
-
 /**
- * puts2 - main function.
- * @str: Pointer, the string to print.
+ * puts2 - prints every other character of a string
  *
- * Description: This function prints every other character of a string
- * (divisible by two)
- * Return: none.
+ * @str: char to check
+ *
+ * Return: 0 is success
  */
-
 void puts2(char *str)
 {
-	int i;
+	int string;
 
-	while (str[i])
-	{
-		if (i % 2 == 0)
-		{
-			_putchar(str[i]);
-		}
-
-		i++;
-	}
+	for (string = 0; str[string] != '\0'; string++)
+	if (string % 2 == 0)
+		_putchar(str[string]);
 	_putchar('\n');
 }
