@@ -1,30 +1,26 @@
 #include "holberton.h"
-
 /**
- * binary_to_uint - FFUnción que convierte..
- *
- *@b: String recibida
- * Return: Se devuelve resultado
+ * binary_to_uint - binary to unsigned int
+ * @b: binary
+ * Return: 0
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int resultado = 0, contador = 0, pow = 1;
+	unsigned int res, i;
+	int contador;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
-
-	while (b[contador])
-		ccontador++;
-	contador--;
-	while (contador >= 0)
+	for (contador = 0; b[contador]; contador++)
 	{
-		if (b[contador] != '1' && b[contador] != '0')
+		if (b[contador] != '0' && b[contador] != '1')
 			return (0);
-
-		resultado += (b[contador] - 48) * pow;
-		pow *= 2;
-		contador--;
 	}
-	return (result);
+	for (i = 1, res = 0, contador--; contador >= 0; contador--, i *= 2)
+	{
+		if (b[contador] == '1')
+			res += i;
+	}
+	return (res);
 }
 
